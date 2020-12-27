@@ -68,3 +68,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+#Docker 
+
+docker build -t linceopen/lince-poc-react:latest .
+
+docker run -p 80:80 -t linceopen/lince-poc-react:latest
+
+docker run -it -p 80:80 -t linceopen/lince-poc-react:latest
+
+docker run -it -p 80:80 --entrypoint=/bin/sh linceopen/lince-poc-react:latest
+
+docker run -it --entrypoint=/docker-entrypoint.sh linceopen/lince-poc-react:latest
+
